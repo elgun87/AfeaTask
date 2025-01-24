@@ -50,17 +50,7 @@ Configure environment variables for JAVA_HOME and MAVEN_HOME.
 Running Test Cases
 Via Command Line:
 
-Navigate to the project directory.
-Run:
-bash
-Copy
-Edit
-mvn test
-To run specific tagged tests:
-bash
-Copy
-Edit
-mvn test -Dcucumber.filter.tags="@smoke and @AddPhoneItems"
+
 Via IDE:
 
 Open the project in IntelliJ IDEA or Eclipse.
@@ -70,13 +60,8 @@ The framework generates an HTML report after test execution.
 Location: target/full-report.html.
 Open the file in any browser to view detailed test execution results.
 How the Plugins Work
-html:target/adidas-report.html:
+html:target/full-report.html:
 Generates an HTML report of test execution in the specified location.
-json:target/cucumber.json (optional, if added):
-Produces a JSON report for integration with reporting tools like Cucumber Reports.
-Reviewing Results
-HTML Report:
-
 Navigate to target/full-report.html.
 Open in a browser to review test pass/fail results and error details.
 AFEA/
